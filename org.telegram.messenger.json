@@ -3,6 +3,12 @@
 	"recommended": true,
 	"authors": ["coderfox"],
 	"observers": [{
+		"description": "saved_videos",
+		"call_media_scan": true,
+		"mask": ".+\\.mp4$",
+		"source": "Pictures/Telegram",
+		"target": "Movies/Telegram"
+	},{
 		"description": "saved_pictures",
 		"call_media_scan": true,
 		"source": "Pictures/Telegram",

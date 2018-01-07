@@ -1,9 +1,9 @@
 {
-    "package": "me.ele",
+    "package": "com.Qunar",
     "recommended": true,
-    "need_appops": false,
+    "need_appops": true,
     "feature_affected": false,
-    "authors": ["simonsmh"],
+    "authors": ["IsaacSuen"],
     "observers": [
 
     ]
