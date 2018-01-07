@@ -1,7 +1,7 @@
 {
 	"package": "org.telegram.messenger",
 	"recommended": true,
-	"authors": ["coderfox"],
+	"authors": ["coderfox", "nickyc4", "最后四项相当于开启「保存到相册」，请谨慎使用"],
 	"observers": [{
 		"description": "saved_videos",
 		"call_media_scan": true,
@@ -11,8 +11,15 @@
 	},{
 		"description": "saved_pictures",
 		"call_media_scan": true,
+		"mask": ".+\\.(jpg|png)$",
 		"source": "Pictures/Telegram",
 		"target": "Pictures/Telegram"
+	},{
+		"description": "saved_files",
+		"call_media_scan": true,
+		"add_to_downloads": true,
+		"source": "Download",
+		"target": "Download/Telegram"
 	},{
 		"description": "saved_pictures",
 		"call_media_scan": true,
@@ -32,12 +39,6 @@
 		"description": "saved_files",
 		"call_media_scan": true,
 		"source": "Telegram/Telegram Documents",
-		"target": "Download/Telegram"
-	},{
-		"description": "saved_files",
-		"call_media_scan": true,
-		"add_to_downloads": true,
-		"source": "Download",
 		"target": "Download/Telegram"
 	}]
 }
