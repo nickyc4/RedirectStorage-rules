@@ -3,11 +3,16 @@
 	"recommended": true,
 	"need_appops": false,
 	"feature_affected": true,
-	"authors": ["Bubble", "Shane"],
+	"authors": ["Bubble", "Shane", "frencis107"],
 	"observers": [{
 		"description": "saved_pictures",
 		"call_media_scan": true,
 		"source": "Pictures/CoolMarket",
 		"target": "Pictures/CoolMarket"
+	},{
+		"description": "download_files",
+		"add_to_downloads": true,
+		"source": "Android/data/com.coolapk.market/files/Download",
+		"target": "Download/CoolMarket"
 	}]
 }
