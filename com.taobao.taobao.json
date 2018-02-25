@@ -7,7 +7,7 @@
             "description": "saved_photos",
             "call_media_scan": true,
             "mask": "image_.+jpg$",
-            "source": "com.taobao.taobao/WXOPENIM/file",
+            "source": "Pictures/Taobao",
             "target": "Pictures/Taobao"
         }
     ]

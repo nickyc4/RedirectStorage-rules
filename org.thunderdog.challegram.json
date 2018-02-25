@@ -1,11 +1,31 @@
 {
     "package": "org.thunderdog.challegram",
-    "recommended": false,
-    "need_appops": false,
+    "recommended": true,
     "feature_affected": false,
-    "authors": ["kotomei"],
-    "reason": {},
-    "observers": [
-
-    ]
+    "authors": ["kotomei","frencis107"],
+    "observers": [{
+		"description": "saved_videos",
+		"call_media_scan": true,
+		"mask": ".+\\.mp4$",
+		"source": "Android/data/org.thunderdog.challegram/files/videos",
+		"target": "Movies/TelegramX"
+	},{
+		"description": "saved_pictures",
+		"call_media_scan": true,
+		"mask": ".+\\.(jpg|png)$",
+		"source": "Android/data/org.thunderdog.challegram/files/photos",
+		"target": "Pictures/TelegramX"
+	},{
+		"description": "saved_files",
+		"call_media_scan": true,
+		"add_to_downloads": true,
+		"source": "Android/data/org.thunderdog.challegram/files/documents",
+		"target": "Download/TelegramX"
+	},{
+		"description": "saved_music",
+		"call_media_scan": true,
+		"mask": ".+\\.(mp3|wav)$",
+		"source": "Android/data/org.thunderdog.challegram/files/music",
+		"target": "Music/TelegramX"
+	}]
 }

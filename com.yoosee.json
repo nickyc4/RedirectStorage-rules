@@ -1,0 +1,19 @@
+{
+    "package": "com.yoosee",
+    "recommended": true,
+    "feature_affected": false,
+    "authors": ["frencis107"],
+    "observers": [
+        {
+            "description": "saved_pictures",
+            "call_media_scan": true,
+            "source": "screenshot",
+            "target": "Pictures/Yoosee"
+        },{
+            "description": "saved_videos",
+            "call_media_scan": true,
+            "source": "gwellvideorec",
+            "target": "Movies/Yoosee"
+        }
+    ]
+}

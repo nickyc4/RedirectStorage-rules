@@ -1,0 +1,14 @@
+{
+    "package": "com.sankuai.meituan",
+    "recommended": true,
+    "feature_affected": false,
+    "authors": ["frencis107"],
+    "observers": [
+    	{
+            "description": "saved_pictures",
+            "call_media_scan": true,
+            "source": "Pictures/meituan",
+            "target": "Pictures/Meituan"
+        }
+    ]
+}
